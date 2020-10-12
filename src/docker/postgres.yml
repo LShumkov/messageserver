@@ -1,0 +1,11 @@
+version: '2'
+services:
+  postgresql:
+    image: postgres:12.1
+    # volumes:
+    #     
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=root
+    ports:
+      - 5432:5432
